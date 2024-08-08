@@ -1,0 +1,90 @@
+/* Estilo global */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1c1c1c, #363636);
+    color: #ECEFF1;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 1);
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    color: #FFAB40;
+    text-transform: uppercase;
+}
+
+#display {
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+    color: #B0BEC5;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ECEFF1;
+    background: #424242;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background: #FFAB40;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #B0BEC5;
+    opacity: 0.8;
+}
+
+footer p {
+    margin: 10px 0;
+    font-weight: 300;
+}
